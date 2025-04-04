@@ -33,3 +33,11 @@ gobuster dir -u http://<IP_ADDR> -x php,txt,json,js,css,pdf -w /usr/share/wordli
 /robots.txt
 /index.html
 /login.php
+
+Let's give a look to each one. So in robots directory we have just a passphrase (we will save this as a potential password). 
+
+![password](images/robots.png)
+
+Now we passing to login.php where is the login page and we try to login using the username we got from the source code and the password from robots.txt
+
+![loginpanel](images/loginpanel.png)
