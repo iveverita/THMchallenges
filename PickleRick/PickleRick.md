@@ -20,7 +20,14 @@ sudo nmap <IP_ADDR> -T4
 Port 22 (SSH) – Might be useful later.
 Port 80 (HTTP) – Let's check the website.
 
-## 🔎 Step 2: Directory Enumeration
+## 🔎 Step 2: Source Code
+
+By examing the source code of the page, we can see that someone left a comment with a username. For sure we will save it for potential login
+
+![logininfo](images/username.png)
+
+
+## 🔎 Step 3: Directory Enumeration
 Since the website doesn’t reveal much, we use Gobuster to enumerate directories.
 
 ```bash
@@ -38,6 +45,8 @@ Let's give a look to each one. So in robots directory we have just a passphrase 
 
 ![password](images/robots.png)
 
-Now we passing to login.php where is the login page and we try to login using the username we got from the source code and the password from robots.txt
+Now we passing to login.php where is the login page and we try to login using the username = R1ckRul3s we got from the source code and the password = Wubbalubbadubdub from robots.txt
 
-![loginpanel](images/loginpanel.png)
+![loginpanel](images/commandpanel.png)
+
+BOOM! We are now loged and can run commands on the remote server.
