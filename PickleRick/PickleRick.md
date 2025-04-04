@@ -13,4 +13,4 @@ We start by scanning the target machine for open ports using `nmap`:
 ```bash
 sudo nmap <IP_ADDR> -T4
 ```
-![Nmap Scan Results](images/Nmapscan)
+![Nmap Scan Results](images/Nmapscan.png)
