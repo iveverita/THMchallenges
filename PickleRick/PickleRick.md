@@ -61,5 +61,7 @@ Finally, we can search for the ingredients by navigating through the directories
 2. Navigate the /home directory and search there for the Rick's clue. And don't forget that we can have files which name can be separated by a space in Linux, mind to use the backslash
 3. Navigate the /root directory and search the last ingredient for the portion
 
+## Conclusion
+This is a good challenge to train basics of pen-test with an easy difficulty. The exploitation step can be also implemented with an reverse shell script run on the target from the command panel.
 
 
