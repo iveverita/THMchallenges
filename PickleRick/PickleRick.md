@@ -54,3 +54,12 @@ Now we passing to login.php where is the login page and we try to login using th
 ![loginpanel](images/commandpanel.png)
 
 BOOM! We are now loged and can run commands on the remote server.
+
+## 🔎 Step 5: Exploitation
+Finally, we can search for the ingredients by navigating through the directories. But pay attention that not all the commands are allowed - like cat. That's why I recommend using grep . \<filename>. 
+1. Navigate the current directory and find the first ingredient
+2. Navigate the /home directory and search there for the Rick's clue. And don't forget that we can have files which name can be separated by a space in Linux, mind to use the backslash
+3. Navigate the /root directory and search the last ingredient for the portion
+
+
+
